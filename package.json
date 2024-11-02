@@ -1,15 +1,16 @@
 {
   "name": "nestjs-deps-graph",
   "version": "0.0.1",
-  "description": "",
+  "description": "A wrapper around the NestJS dependency graph that exposes it through a REST API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npx tsc && npm publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/mateusfdl/nestjs-deps-graph.git"
-  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "author": "Matheus Lima",
   "license": "MIT",
   "bugs": {
