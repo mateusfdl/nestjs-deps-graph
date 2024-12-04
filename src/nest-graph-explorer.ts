@@ -5,6 +5,7 @@ import { promisify } from 'util';
 import { deflate } from 'zlib';
 import { Edge } from './edge';
 import { Node } from './node';
+import { Config } from './config';
 
 export class NestGraphExplorer {
   private nodes: Node[];
